@@ -1,0 +1,73 @@
+.stats-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.statistics-box {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 600px;
+    position: relative;
+}
+
+.statistics-chart {
+    width: 100%;
+    height: 300px;
+    margin-top: 1.5rem;
+}
+
+.chart-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.chart-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.win-rate-progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: purple;
+    transition: width 0.3s linear;
+}
+
+.games-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .statistics-box {
+      padding: 1rem;
+    }
+
+    .chart-label {
+      font-size: 1rem;
+    }
+
+    .chart-value {
+      font-size: 1.5rem;
+    }
+
+    .games-count {
+      font-size: 1.2rem;
+    }
+}

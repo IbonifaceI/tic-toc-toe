@@ -1,29 +1,87 @@
-/* src/styles.css */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fafafa;
-  font-family: Arial, sans-serif;
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-in-out forwards;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.navigation-link {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-link.active {
+  background-color: lightblue;
+}
+
+.navigation-link:hover {
+  background-color: lightgreen;
+}
+
+.content-area {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
   }
-  to {
-    opacity: 1;
+
+  .page-title {
+    font-size: 2rem;
   }
-}
 
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, purple, pink);
-}
+  .logo {
+    font-size: 1.5rem;
+  }
 
-.text-shadow {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  .navigation-link {
+    padding: 0.3rem 0.8rem;
+  }
 }

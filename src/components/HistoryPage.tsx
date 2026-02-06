@@ -3,6 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card'
 import { Button } from '../components/ui/Button';
 import Icon from '../components/ui/Icon';
 import { MatchRecord } from '../pages/Index';
+import './styles/HistoryPage.css';
+
 interface HistoryPageProps {
   matches: MatchRecord[];
 }

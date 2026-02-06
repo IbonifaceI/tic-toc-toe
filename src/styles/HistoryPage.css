@@ -1,0 +1,66 @@
+.history-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.history-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    max-width: 600px;
+    position: relative;
+}
+
+.history-match-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.match-details {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.match-date {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.winner-icon {
+    font-size: 1.5rem;
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .history-card {
+      padding: 1rem;
+    }
+
+    .match-item {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .match-details {
+      margin-right: 0;
+    }
+
+    .match-date {
+      margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,78 @@
+/* Стилизация игрового поля */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Для классического крестиков-ноликов сетка 3х3 */
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-out;
+}
+
+.cell.winning-cell {
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+.game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.current-turn-indicator {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.reset-button {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: darkred;
+}
+
+@media screen and (max-width: 600px) {
+    .header-title {
+      font-size: 2rem;
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+      font-size: 2em;
+    }
+}

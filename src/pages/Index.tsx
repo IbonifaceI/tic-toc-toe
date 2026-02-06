@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import LoginPage from '../components/LoginPage';
 import GamePage from '../components/GamePage';
 import HistoryPage from '../components/HistoryPage';
 import StatsPage from '../components/StatsPage';
 import { Button } from '../components/ui/Button';
 import Icon from '../components/ui/Icon';
+
+import './styles/Index.css';
 
 export interface Player {
   name: string;

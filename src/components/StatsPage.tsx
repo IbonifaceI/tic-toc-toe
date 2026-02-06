@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
 import { MatchRecord } from '../pages/Index';
+import './styles/StatsPage.css';
+
 interface StatsPageProps {
   matches: MatchRecord[];
   player1: string;

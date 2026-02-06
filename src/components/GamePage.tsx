@@ -3,6 +3,8 @@ import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import Icon from '../components/ui/Icon';
 import { MatchRecord } from '../pages/Index';
+import './styles/GamePage.css';
+
 interface GamePageProps {
   player1: string;
   player2: string;
